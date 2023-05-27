@@ -48,6 +48,7 @@ function showMovies(movies) {
     movieEl.addEventListener("click", () => {
       localStorage.setItem("movie", JSON.stringify(movie));
       window.location = "movie.html";
+      showSeatSelectionSection();
     });
   });
 }
